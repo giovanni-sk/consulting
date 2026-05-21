@@ -1,49 +1,6 @@
 /*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
-.sticky {
-  position: sticky;
-}
-.z-50 {
-  z-index: 50;
-}
 .container {
   width: 100%;
-}
-.mx-auto {
-  margin-inline: auto;
-}
-.flex {
-  display: flex;
-}
-.grid {
-  display: grid;
-}
-.hidden {
-  display: none;
-}
-.w-full {
-  width: 100%;
-}
-.items-center {
-  align-items: center;
-}
-.justify-between {
-  justify-content: space-between;
-}
-.justify-center {
-  justify-content: center;
-}
-.rounded-full {
-  border-radius: calc(infinity * 1px);
-}
-.bg-gradient-to-br {
-  --tw-gradient-position: to bottom right in oklab;
-  background-image: linear-gradient(var(--tw-gradient-stops));
-}
-.text-center {
-  text-align: center;
-}
-.underline {
-  text-decoration-line: underline;
 }
 .antialiased {
   -webkit-font-smoothing: antialiased;
