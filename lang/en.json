@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "topbar": {
+      "address": "Connecting Opportunities, Creating Impact",
+      "email": "contact@meltingconsulting.com",
+      "phone": "+33 (0) 1 23 45 67 89"
+    },
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "opportunities": "Opportunities",
+      "why_invest": "Why Invest",
+      "immersion": "Immersion Stay",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    },
+    "cta": "Free Consultation"
+  },
+  "hero": {
+    "slides": [
+      {
+        "subtitle": "YOUR STRATEGIC PARTNER",
+        "title": "Consulting is a long-term investment in your goal's future.",
+        "description": "We support businesses and investors in their development projects in Africa, offering strategic solutions tailored to every need.",
+        "cta_primary": "Free Consultation",
+        "cta_secondary": "Learn more"
+      },
+      {
+        "subtitle": "INVESTMENT OPPORTUNITIES",
+        "title": "Connect to the best investment opportunities in Africa.",
+        "description": "Identify and seize the most promising growth opportunities through our extensive network and local expertise.",
+        "cta_primary": "View Opportunities",
+        "cta_secondary": "Discover"
+      },
+      {
+        "subtitle": "IMMERSION STAY",
+        "title": "Discover Africa through a unique immersion experience.",
+        "description": "Dive into the heart of African markets with our immersion stays designed to give you a concrete vision of the continent's economic potential.",
+        "cta_primary": "Plan a Stay",
+        "cta_secondary": "Learn more"
+      },
+      {
+        "subtitle": "INNOVATION & DEVELOPMENT",
+        "title": "Innovation at the service of sustainable development in Africa.",
+        "description": "We support innovative projects that transform African economies and create positive impact for local communities.",
+        "cta_primary": "Our Projects",
+        "cta_secondary": "Discover"
+      }
+    ]
+  }
+}

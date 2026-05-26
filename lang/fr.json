@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "topbar": {
+      "address": "Connecting Opportunities, Creating Impact",
+      "email": "contact@meltingconsulting.com",
+      "phone": "+33 (0) 1 23 45 67 89"
+    },
+    "links": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "opportunities": "Opportunités",
+      "why_invest": "Pourquoi Investir",
+      "immersion": "Séjour d'Immersion",
+      "gallery": "Galerie",
+      "contact": "Contact"
+    },
+    "cta": "Consultation Gratuite"
+  },
+  "hero": {
+    "slides": [
+      {
+        "subtitle": "VOTRE PARTENAIRE STRATÉGIQUE",
+        "title": "Le conseil est un investissement à long terme pour l'avenir de vos objectifs.",
+        "description": "Nous accompagnons les entreprises et les investisseurs dans leurs projets de développement en Afrique, en offrant des solutions stratégiques adaptées à chaque besoin.",
+        "cta_primary": "Consultation Gratuite",
+        "cta_secondary": "En savoir plus"
+      },
+      {
+        "subtitle": "OPPORTUNITÉS D'INVESTISSEMENT",
+        "title": "Connectez-vous aux meilleures opportunités d'investissement en Afrique.",
+        "description": "Identifiez et saisissez les opportunités de croissance les plus prometteuses grâce à notre réseau étendu et notre expertise locale.",
+        "cta_primary": "Voir les Opportunités",
+        "cta_secondary": "Découvrir"
+      },
+      {
+        "subtitle": "SÉJOUR D'IMMERSION",
+        "title": "Découvrez l'Afrique à travers une expérience d'immersion unique.",
+        "description": "Plongez au cœur des marchés africains avec nos séjours d'immersion conçus pour vous offrir une vision concrète du potentiel économique du continent.",
+        "cta_primary": "Planifier un Séjour",
+        "cta_secondary": "En savoir plus"
+      },
+      {
+        "subtitle": "INNOVATION & DÉVELOPPEMENT",
+        "title": "L'innovation au service du développement durable en Afrique.",
+        "description": "Nous soutenons les projets innovants qui transforment les économies africaines et créent un impact positif pour les communautés locales.",
+        "cta_primary": "Nos Projets",
+        "cta_secondary": "Découvrir"
+      }
+    ]
+  }
+}
