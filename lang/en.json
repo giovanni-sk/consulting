@@ -77,32 +77,44 @@
       "gdiz": {
         "title": "Industry & GDIZ",
         "badge": "Special Zone",
-        "desc": "The Glo-Djigbe Industrial Zone offers exceptional conditions: total tax exemptions, local cotton and cashew processing, and world-class infrastructure."
+        "desc": "The Glo-Djigbe Industrial Zone offers exceptional conditions: total tax exemptions, local cotton and cashew processing, and world-class infrastructure.",
+        "details_lead": "Dive into the heart of West Africa's most dynamic industrial ecosystem, supported by highly attractive tax policies.",
+        "details_content": "<p style='margin-bottom: 1.5rem;'>The <strong>Glo-Djigbe Industrial Zone (GDIZ)</strong> spans over 1640 hectares just 45 km from Cotonou. Designed as a world-class processing hub, it is dedicated to the local valorization of Beninese agricultural raw materials such as cotton, cashews, pineapples, and shea.</p><h4 style='font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-brand-blue);'>Benefits for Investors</h4><ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;'><li>Total exemption from customs duties and VAT on equipment.</li><li>Free repatriation of profits.</li><li>Administrative single window for rapid setup (company registration, licenses, visas).</li><li>World-class infrastructure: reliable energy, fiber optics, water treatment.</li></ul><p>Investing in GDIZ means choosing a secure environment, backed by the Beninese government's political will to make the country an export hub for finished and semi-finished products.</p>"
       },
       "agro": {
         "title": "Agro-Industry",
         "badge": "N1 Cotton",
-        "desc": "State-of-the-art units for processing cotton, soybeans, pineapple, and cashews. Benin is the leading cotton producer in Africa."
+        "desc": "State-of-the-art units for processing cotton, soybeans, pineapple, and cashews. Benin is the leading cotton producer in Africa.",
+        "details_lead": "Harness the potential of one of Africa's leading agricultural producers through modern processing technologies.",
+        "details_content": "<p style='margin-bottom: 1.5rem;'>Agriculture remains the backbone of the Beninese economy. With a massive government push to move from exporting raw goods to high-value-added processed goods, the agro-industrial sector offers exceptional ROI opportunities.</p><h4 style='font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-brand-blue);'>Strategic Strengths</h4><ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;'><li>Benin is the leading cotton producer in Africa.</li><li>Abundant, fertile land and a favorable climate for diverse cash crops.</li><li>State-of-the-art processing infrastructure integrated within the GDIZ.</li><li>Strong international demand for organic and high-quality African products.</li></ul><p>We provide market intelligence, site scouting, and legal support for companies wishing to establish processing facilities or distribution networks.</p>"
       },
       "tourism": {
         "title": "Memorial Tourism",
         "badge": "Culture & Vodun",
-        "desc": "Massive investments in cultural heritage: Slave Route in Ouidah, Royal Palaces of Abomey, unique Vodun culture, and ecotourism in national parks."
+        "desc": "Massive investments in cultural heritage: Slave Route in Ouidah, Royal Palaces of Abomey, unique Vodun culture, and ecotourism in national parks.",
+        "details_lead": "Participate in the tourism and cultural revival of Benin, West Africa's future flagship destination.",
+        "details_content": "<p style='margin-bottom: 1.5rem;'>The Beninese government has allocated over <strong>1 billion euros</strong> to the development of the tourism sector, aiming to make the country a global hotspot for memorial, cultural, and eco-tourism.</p><h4 style='font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-brand-red);'>Development Hubs</h4><ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;'><li><strong>Ouidah & the Slave Route:</strong> Construction of luxury hotel complexes, marinas, and international museums (International Museum of Memory and Slavery).</li><li><strong>Vodun Tourism:</strong> Benin, the cradle of Vodun, now organizes the 'Vodun Days', attracting thousands of diaspora members and curious people from all over the world.</li><li><strong>Ecotourism:</strong> Rehabilitation of the Pendjari National Park, managed by African Parks, home to the largest wildlife in West Africa (lions, elephants, cheetahs).</li></ul><p>Opportunities include building hotel accommodations, developing niche tourism agencies, and creating high-end leisure infrastructure.</p>"
       },
       "logistics": {
         "title": "Logistics & Transport",
         "badge": "Regional Hub",
-        "desc": "Extension of the Autonomous Port of Cotonou, new Glo-Djigbe International Airport, and privileged connection to the Nigerian market of 220 million inhabitants."
+        "desc": "Extension of the Autonomous Port of Cotonou, new Glo-Djigbe International Airport, and privileged connection to the Nigerian market of 220 million inhabitants.",
+        "details_lead": "Leverage Benin’s geostrategic position as the premier gateway to the West African markets.",
+        "details_content": "<p style='margin-bottom: 1.5rem;'>With the expansion of the Port of Cotonou and the construction of the Glo-Djigbé International Airport, Benin is rapidly positioning itself as the most efficient logistics platform in the Gulf of Guinea.</p><h4 style='font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-brand-blue);'>Logistics Advantages</h4><ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;'><li>Direct and rapid access to the Nigerian market, a population of over 220 million consumers.</li><li>World-class port terminal management (Port of Cotonou/APM Terminals).</li><li>Modernized transport corridors facilitating road freight to landlocked countries (Niger, Burkina Faso, Mali).</li></ul><p>We assist international logistics providers in navigating the local regulatory environment, finding warehouse space, and establishing efficient distribution networks.</p>"
       },
       "tech": {
         "title": "Technologies & Innovation",
         "badge": "Seme City",
-        "desc": "Seme City: a 300-hectare technology park training African youth in digital fields and innovation."
+        "desc": "Seme City: a 300-hectare technology park training African youth in digital fields and innovation.",
+        "details_lead": "Invest in the Silicon Valley of West Africa and the knowledge economy.",
+        "details_content": "<p style='margin-bottom: 1.5rem;'>Benin aims to become the regional headquarters for Tech companies, innovative startups, and cutting-edge academic institutions through the pharaonic <strong>Seme City</strong> project.</p><h4 style='font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-brand-green);'>The Digital Ecosystem</h4><ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;'><li><strong>Seme City:</strong> A 300-hectare smart and sustainable city dedicated to training, research, and incubating technology companies.</li><li><strong>Connectivity:</strong> The country is connected to multiple international submarine cables, offering some of the fastest and most stable internet speeds in the sub-region.</li><li><strong>Financial Services (Fintech):</strong> A regulatory environment favorable to the emergence of mobile payment solutions, micro-insurance, and financial inclusion.</li></ul><p>Melting Consulting helps technology companies establish themselves, recruit top local talent, and forge strategic partnerships with institutions.</p>"
       },
       "media": {
         "title": "Audiovisual Production",
         "badge": "Emerging",
-        "desc": "An emerging sector with significant potential in producing audiovisual content for African and international markets."
+        "desc": "An emerging sector with significant potential in producing audiovisual content for African and international markets.",
+        "details_lead": "Explore the vibrant cultural and media landscape of Benin, an essential market for African storytelling.",
+        "details_content": "<p style='margin-bottom: 1.5rem;'>As the African continent sees a boom in demand for high-quality local content, Benin is establishing itself as a creative hub for audiovisual production, supported by local talent and cultural depth.</p><h4 style='font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-brand-red);'>Growth Potential</h4><ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;'><li>Rich historical, cultural, and spiritual narratives waiting to be adapted for global media.</li><li>Rising demand for digital-first content, documentaries, and entertainment.</li><li>State initiatives to promote the national cultural and creative economy.</li></ul><p>Through our branch <strong>Melting Prod</strong>, we have a deep understanding of this ecosystem. We offer production support, media consulting, and partnership opportunities for international media groups looking to expand into Africa.</p>"
       }
     },
     "cta_learn": "Learn more"

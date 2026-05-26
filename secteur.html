@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Secteur - Melting Consulting</title>
+    
+    <!-- Tailwind CSS compilé / Styles globaux -->
+    <link rel="stylesheet" href="css/output.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased bg-white">
+
+    <!-- HEADER / NAVIGATION SYSTEM -->
+    <header class="navbar-header" style="position: sticky; top: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 100; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <nav class="navbar-main scrolled">
+            <div class="container-custom navbar-inner">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-logo" aria-label="Melting Consulting">
+                    <img src="images/logo2.png" alt="Melting Consulting Logo">
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="navbar-menu">
+                    <div class="nav-item">
+                        <a href="index.html#accueil" class="nav-link" data-i18n="nav.links.home">Accueil</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="index.html#opportunites" class="nav-link active" data-i18n="nav.links.opportunities">Opportunités</a>
+                    </div>
+                </div>
+
+                <!-- Right Section: CTA button -->
+                <div class="navbar-right">
+                    <a href="index.html#contact" class="btn-nav-cta">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM1.24 16.253a4.878 4.878 0 0 1 1.76-2.17 4.878 4.878 0 0 1 5.92-.08 4.876 4.876 0 0 1 1.78 2.25m-2.25-6.75a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM1.24 16.253a4.878 4.878 0 0 1 1.76-2.17 4.878 4.878 0 0 1 5.92-.08 4.876 4.876 0 0 1 1.78 2.25M21.25 18.75c0-1.75-2.025-3.325-5.25-3.325s-5.25 1.575-5.25 3.325M16 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" />
+                        </svg>
+                        <span data-i18n="nav.cta">Consultation Gratuite</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- DYNAMIC CONTENT SECTION -->
+    <main style="min-height: 80vh;">
+        <!-- Banner -->
+        <div style="background: linear-gradient(135deg, var(--color-brand-blue) 0%, #081B36 100%); padding: 80px 0 60px; color: white;">
+            <div class="container-custom">
+                <a href="index.html#opportunites" style="display: inline-flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.7); text-decoration: none; margin-bottom: 24px; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                    </svg>
+                    <span data-i18n="nav.links.opportunities">Retour aux opportunités</span>
+                </a>
+                
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <span id="sector-badge" class="sector-card-badge bg-brand-green" style="align-self: flex-start;">Chargement...</span>
+                    <h1 id="sector-title" style="font-family: 'Poppins', sans-serif; font-size: 3rem; font-weight: 700; line-height: 1.2; margin: 0;">Chargement...</h1>
+                    <p id="sector-lead" style="font-size: 1.125rem; opacity: 0.9; max-width: 800px; line-height: 1.6; margin: 0;">Veuillez patienter pendant le chargement des détails du secteur.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details Content -->
+        <div class="container-custom" style="padding: 60px 0;">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start;">
+                
+                <div style="background: white; border-radius: 16px; padding: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05);">
+                    <div id="sector-content" style="font-size: 1.1rem; line-height: 1.8; color: var(--color-text-body);">
+                        <!-- Dynamic HTML content goes here -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER (Simplified) -->
+    <footer class="footer-section">
+        <div class="container-custom">
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Melting Consulting / Melting Prod - Jean-Marie Vianney ASSANI. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/secteur.js"></script>
+</body>
+</html>
