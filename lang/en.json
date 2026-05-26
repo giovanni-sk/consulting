@@ -47,5 +47,152 @@
         "cta_secondary": "Discover"
       }
     ]
+  },
+  "about": {
+    "subtitle": "WHO WE ARE",
+    "title": "Melting Consulting",
+    "desc_lead": "Strategic consulting firm specialized in supporting international investors in Benin",
+    "vision_title": "Our Vision",
+    "vision_highlight": "Melting Consulting is the bridge between international investors and Benin's exceptional opportunities. We firmly believe that Benin represents the next frontier of growth in West Africa.",
+    "vision_text": "Our local expertise and international network allow us to offer tailored support to maximize your investments in one of the most dynamic countries on the African continent.",
+    "mission_title": "Our Mission",
+    "mission_text": "Facilitating access to investment opportunities in Benin by offering strategic consulting, market analysis, and operational support. We transform your vision into reality on the ground in Benin.",
+    "badge_count": "10+",
+    "badge_text": "Years of Experience",
+    "gdp_val": "7.5%",
+    "gdp_lbl": "GDP Growth in 2024",
+    "sp_val": "BB",
+    "sp_lbl": "S&P Rating (Positive Outlook)",
+    "cedeao_val": "200M+",
+    "cedeao_lbl": "ECOWAS Inhabitants",
+    "hub_val": "N1",
+    "hub_lbl": "Emerging Regional Hub",
+    "cta_more": "Discover more"
+  },
+  "sectors": {
+    "subtitle": "KEY SECTORS",
+    "title": "Investment Opportunities",
+    "desc_lead": "Benin offers diversified investment opportunities in high-growth sectors",
+    "items": {
+      "gdiz": {
+        "title": "Industry & GDIZ",
+        "badge": "Special Zone",
+        "desc": "The Glo-Djigbe Industrial Zone offers exceptional conditions: total tax exemptions, local cotton and cashew processing, and world-class infrastructure."
+      },
+      "agro": {
+        "title": "Agro-Industry",
+        "badge": "N1 Cotton",
+        "desc": "State-of-the-art units for processing cotton, soybeans, pineapple, and cashews. Benin is the leading cotton producer in Africa."
+      },
+      "tourism": {
+        "title": "Memorial Tourism",
+        "badge": "Culture & Vodun",
+        "desc": "Massive investments in cultural heritage: Slave Route in Ouidah, Royal Palaces of Abomey, unique Vodun culture, and ecotourism in national parks."
+      },
+      "logistics": {
+        "title": "Logistics & Transport",
+        "badge": "Regional Hub",
+        "desc": "Extension of the Autonomous Port of Cotonou, new Glo-Djigbe International Airport, and privileged connection to the Nigerian market of 220 million inhabitants."
+      },
+      "tech": {
+        "title": "Technologies & Innovation",
+        "badge": "Seme City",
+        "desc": "Seme City: a 300-hectare technology park training African youth in digital fields and innovation."
+      },
+      "media": {
+        "title": "Audiovisual Production",
+        "badge": "Emerging",
+        "desc": "An emerging sector with significant potential in producing audiovisual content for African and international markets."
+      }
+    },
+    "cta_learn": "Learn more"
+  },
+  "advantages": {
+    "subtitle": "STRATEGIC ADVANTAGES",
+    "title": "5 Great Reasons to Invest in Benin",
+    "items": [
+      {
+        "number": "01",
+        "title": "Institutional Stability",
+        "desc": "A peaceful democracy and a secure legal framework for your investments"
+      },
+      {
+        "number": "02",
+        "title": "Geostrategic Position",
+        "desc": "Natural gateway to the ECOWAS market and the Nigerian giant"
+      },
+      {
+        "number": "03",
+        "title": "Modern Infrastructure",
+        "desc": "Expansion of the Port of Cotonou and new Glo-Djigbé International Airport"
+      },
+      {
+        "number": "04",
+        "title": "Human Capital",
+        "desc": "Youth trained in tomorrow's professions at Seme City and universities"
+      },
+      {
+        "number": "05",
+        "title": "Tax Incentives",
+        "desc": "One of the most attractive Investment Codes in the region"
+      }
+    ]
+  },
+  "immersion": {
+    "subtitle": "EXCLUSIVE EXPERIENCE",
+    "title": "Immersion Stay for Entrepreneurs",
+    "desc_lead": "Discover Benin during a customized stay designed for international decision-makers",
+    "overview_title": "Tailored Program",
+    "details": {
+      "dates": {
+        "label": "Dates",
+        "value": "September 2026 (flexible dates according to your schedule)"
+      },
+      "duration": {
+        "label": "Duration",
+        "value": "5 to 7 days of intensive immersion"
+      },
+      "group": {
+        "label": "Group Size",
+        "value": "Limited to 10 participants for a premium and personalized experience"
+      },
+      "support": {
+        "label": "Support",
+        "value": "Full guidance by our local experts and professional interpreters"
+      }
+    },
+    "pillars": {
+      "visits": {
+        "title": "Strategic Visits",
+        "desc": "Discover the drivers of Benin's growth",
+        "items": [
+          "Glo-Djigbe Industrial Zone (GDIZ)",
+          "Autonomous Port of Cotonou",
+          "Seme City - Technology Park",
+          "Major agro-industrial projects"
+        ]
+      },
+      "meetings": {
+        "title": "Business Meetings",
+        "desc": "Connect with key decision-makers",
+        "items": [
+          "Government authorities and promotion agencies",
+          "Chambers of Commerce and Industry",
+          "Local entrepreneurs and established investors",
+          "Financial and banking institutions"
+        ]
+      },
+      "culture": {
+        "title": "Cultural Discovery",
+        "desc": "Dive into the rich heritage of Benin",
+        "items": [
+          "Slave Route in Ouidah",
+          "Royal Palaces of Abomey (UNESCO)",
+          "Artisan villages and local markets",
+          "Authentic Beninese gastronomy"
+        ]
+      }
+    },
+    "cta": "Book my immersion stay"
   }
 }

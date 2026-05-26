@@ -274,12 +274,71 @@ document.addEventListener('DOMContentLoaded', function () {
   heroSlider.init();
 
   // ========================================
+  // SCROLL REVEAL ANIMATIONS
+  // ========================================
+  const advantageCards = document.querySelectorAll('.advantage-card');
+  
+  if ('IntersectionObserver' in window && advantageCards.length > 0) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target); // Stop observing once revealed
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    advantageCards.forEach(card => {
+      revealObserver.observe(card);
+    });
+  }
+
+  // ========================================
+  // IMMERSION STAY - PILLARS ACCORDION
+  // ========================================
+  const pillarHeaders = document.querySelectorAll('.pillar-card-header');
+  
+  pillarHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+      const currentCard = this.closest('.pillar-card');
+      const allCards = document.querySelectorAll('.pillar-card');
+      const isActive = currentCard.classList.contains('active');
+      
+      // Close all cards
+      allCards.forEach(card => {
+        card.classList.remove('active');
+      });
+      
+      // If the clicked card wasn't active, open it
+      if (!isActive) {
+        currentCard.classList.add('active');
+      }
+    });
+  });
+
+  // ========================================
   // TRANSLATION SYSTEM INIT
   // ========================================
   if (typeof TranslationManager !== 'undefined') {
-    // Register hero slider for language updates
+    // Register hero slider and potential other handlers for language updates
     TranslationManager.onLanguageChange((translations) => {
       heroSlider.updateContent(translations);
+      
+      // Update advantages content if dynamically rendered/updated
+      if (translations && translations.advantages && translations.advantages.items) {
+        const advItems = translations.advantages.items;
+        advantageCards.forEach((card, idx) => {
+          if (advItems[idx]) {
+            const titleEl = card.querySelector('.advantage-title');
+            const descEl = card.querySelector('.advantage-desc');
+            if (titleEl) titleEl.textContent = advItems[idx].title;
+            if (descEl) descEl.textContent = advItems[idx].desc;
+          }
+        });
+      }
     });
 
     // Initialize translations

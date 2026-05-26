@@ -47,5 +47,152 @@
         "cta_secondary": "Découvrir"
       }
     ]
+  },
+  "about": {
+    "subtitle": "QUI SOMMES-NOUS",
+    "title": "Melting Consulting",
+    "desc_lead": "Cabinet de conseil stratégique spécialisé dans l'accompagnement des investisseurs internationaux au Bénin",
+    "vision_title": "Notre Vision",
+    "vision_highlight": "Melting Consulting est le pont entre les investisseurs internationaux et les opportunités exceptionnelles du Bénin. Nous croyons fermement que le Bénin représente la prochaine frontière de croissance en Afrique de l'Ouest.",
+    "vision_text": "Notre expertise locale et notre réseau international nous permettent d'offrir un accompagnement sur mesure pour maximiser vos investissements dans l'un des pays les plus dynamiques du continent africain.",
+    "mission_title": "Notre Mission",
+    "mission_text": "Faciliter l'accès aux opportunités d'investissement au Bénin en offrant des services de conseil stratégique, d'analyse de marché, et d'accompagnement opérationnel. Nous transformons votre vision en réalité sur le terrain béninois.",
+    "badge_count": "10+",
+    "badge_text": "Ans d'Expertise",
+    "gdp_val": "7,5%",
+    "gdp_lbl": "Croissance du PIB en 2024",
+    "sp_val": "BB",
+    "sp_lbl": "Notation S&P (Perspective Positive)",
+    "cedeao_val": "200M+",
+    "cedeao_lbl": "Habitants CEDEAO",
+    "hub_val": "N°1",
+    "hub_lbl": "Hub Régional Émergent",
+    "cta_more": "En savoir plus"
+  },
+  "sectors": {
+    "subtitle": "SECTEURS PORTEURS",
+    "title": "Opportunités d'Investissement",
+    "desc_lead": "Le Bénin offre des opportunités d'investissement diversifiées dans des secteurs à forte croissance",
+    "items": {
+      "gdiz": {
+        "title": "Industrie & GDIZ",
+        "badge": "Zone Spéciale",
+        "desc": "La Zone Industrielle de Glo-Djigbé offre des conditions exceptionnelles : exonérations fiscales totales, transformation locale du coton et de la noix de caiou, infrastructures de classe mondiale."
+      },
+      "agro": {
+        "title": "Agro-Industrie",
+        "badge": "N°1 Coton",
+        "desc": "Unités de pointe pour la transformation du coton, du soja, de l'ananas et de la noix de cajou. Le Bénin est le premier producteur mondial de coton en Afrique."
+      },
+      "tourism": {
+        "title": "Tourisme Mémoriel",
+        "badge": "Culture & Vodoun",
+        "desc": "Investissements massifs dans le patrimoine culturel : Route de l'Esclavage à Ouidah, Palais Royaux d'Abomey, culture Vodoun unique au monde, écotourisme dans les parcs nationaux."
+      },
+      "logistics": {
+        "title": "Logistique & Transport",
+        "badge": "Hub Régional",
+        "desc": "Extension du Port Autonome de Cotonou, nouvel Aéroport International de Glo-Djigbé, connexion privilégiée au marché nigérian de 220 millions d'habitants."
+      },
+      "tech": {
+        "title": "Technologies & Innovation",
+        "badge": "Sème City",
+        "desc": "Sème City : parc technologique de 300 hectares formant la jeunesse africaine aux métiers du numérique et de l'innovation."
+      },
+      "media": {
+        "title": "Production Audiovisuelle",
+        "badge": "Émergence",
+        "desc": "Secteur émergent avec un potentiel important dans la production de contenus audiovisuels pour les marchés africain et international."
+      }
+    },
+    "cta_learn": "En savoir plus"
+  },
+  "advantages": {
+    "subtitle": "AVANTAGES STRATÉGIQUES",
+    "title": "5 Bonnes Raisons d'Investir au Bénin",
+    "items": [
+      {
+        "number": "01",
+        "title": "Stabilité Institutionnelle",
+        "desc": "Une démocratie apaisée et un cadre juridique sécurisé pour vos investissements"
+      },
+      {
+        "number": "02",
+        "title": "Position Géostratégique",
+        "desc": "Porte d'entrée naturelle vers le marché de la CEDEAO et le géant nigérian"
+      },
+      {
+        "number": "03",
+        "title": "Infrastructures Modernes",
+        "desc": "Extension du Port de Cotonou et nouvel Aéroport International de Glo-Djigbé"
+      },
+      {
+        "number": "04",
+        "title": "Capital Humain",
+        "desc": "Une jeunesse formée aux métiers de demain à Sème City et dans les universités"
+      },
+      {
+        "number": "05",
+        "title": "Incitations Fiscales",
+        "desc": "Un Code des Investissements parmi les plus attractifs de la région"
+      }
+    ]
+  },
+  "immersion": {
+    "subtitle": "EXPÉRIENCE EXCLUSIVE",
+    "title": "Séjour d'Immersion pour Entrepreneurs",
+    "desc_lead": "Découvrez le Bénin lors d'un séjour personnalisé conçu pour les décideurs internationaux",
+    "overview_title": "Programme sur Mesure",
+    "details": {
+      "dates": {
+        "label": "Dates",
+        "value": "Septembre 2026 (dates flexibles selon votre agenda)"
+      },
+      "duration": {
+        "label": "Durée",
+        "value": "5 à 7 jours d'immersion intensive"
+      },
+      "group": {
+        "label": "Groupe",
+        "value": "Limité à 10 participants pour une expérience premium et personnalisée"
+      },
+      "support": {
+        "label": "Accompagnement",
+        "value": "Encadrement complet par nos experts locaux et interprètes professionnels"
+      }
+    },
+    "pillars": {
+      "visits": {
+        "title": "Visites Stratégiques",
+        "desc": "Découvrez les moteurs de la croissance béninoise",
+        "items": [
+          "Zone Industrielle de Glo-Djigbé (GDIZ)",
+          "Port Autonome de Cotonou",
+          "Sème City - Parc Technologique",
+          "Projets agro-industriels majeurs"
+        ]
+      },
+      "meetings": {
+        "title": "Rencontres d'Affaires",
+        "desc": "Connectez-vous aux décideurs clés",
+        "items": [
+          "Autorités gouvernementales et agences de promotion",
+          "Chambres de Commerce et d'Industrie",
+          "Entrepreneurs locaux et investisseurs établis",
+          "Institutions financières et bancaires"
+        ]
+      },
+      "culture": {
+        "title": "Découverte Culturelle",
+        "desc": "Plongez dans la richesse patrimoniale du Bénin",
+        "items": [
+          "Route de l'Esclavage à Ouidah",
+          "Palais Royaux d'Abomey (UNESCO)",
+          "Villages artisanaux et marchés locaux",
+          "Gastronomie béninoise authentique"
+        ]
+      }
+    },
+    "cta": "Réserver mon séjour d'immersion"
   }
 }
