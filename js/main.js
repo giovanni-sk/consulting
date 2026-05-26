@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.startAutoPlay();
 
       // Pause on hover
-      const heroSection = document.getElementById('hero');
+      const heroSection = document.getElementById('accueil');
       if (heroSection) {
         heroSection.addEventListener('mouseenter', () => this.stopAutoPlay());
         heroSection.addEventListener('mouseleave', () => this.startAutoPlay());
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
 
     setupSwipe() {
-      const heroSection = document.getElementById('hero');
+      const heroSection = document.getElementById('accueil');
       if (!heroSection) return;
 
       let startX = 0;
@@ -495,13 +495,70 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ========================================
+  // SCROLLSPY (ACTIVE NAV LINKS)
+  // ========================================
+  const sections = document.querySelectorAll('section[id]');
+  const desktopNavLinks = document.querySelectorAll('.navbar-menu .nav-link');
+  const mobileNavLinks = document.querySelectorAll('.mobile-menu-body .mobile-nav-link');
+
+  function updateActiveNav() {
+    const scrollY = window.scrollY;
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - navbarHeight - 50; 
+      const sectionHeight = section.offsetHeight;
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    if (scrollY < 100) {
+        currentSection = 'accueil';
+    }
+
+    desktopNavLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentSection}`) {
+        link.classList.add('active');
+        
+        // Also highlight parent if it's in a dropdown
+        const parentDropdown = link.closest('.nav-item-dropdown');
+        if (parentDropdown) {
+          const trigger = parentDropdown.querySelector('.nav-dropdown-trigger');
+          if (trigger) trigger.classList.add('active');
+        }
+      }
+    });
+
+    mobileNavLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentSection}`) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav(); // Call once on load
+
+  // ========================================
   // SMOOTH SCROLL FOR ANCHOR LINKS
   // ========================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
       if (href === '#') return;
+      
+      // Allow dropdown triggers to work as links if they have a target, but here we prevent default for all smooth scrolls
       e.preventDefault();
+      
+      if (typeof closeMobileMenu === 'function' && document.getElementById('mobile-menu').classList.contains('open')) {
+        closeMobileMenu();
+      }
+
       const target = document.querySelector(href);
       if (target) {
         const navbarHeight = navbar ? navbar.offsetHeight : 0;
