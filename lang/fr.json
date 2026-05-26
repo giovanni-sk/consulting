@@ -194,5 +194,53 @@
       }
     },
     "cta": "Réserver mon séjour d'immersion"
+  },
+  "gallery": {
+    "subtitle": "DÉCOUVREZ LE BÉNIN",
+    "title": "Galerie Visuelle",
+    "desc_lead": "Aperçu des sites d'investissement et des richesses culturelles du Bénin",
+    "items": {
+      "gdiz": "Zone Industrielle GDIZ",
+      "agro": "Unités Agro-Industrielles",
+      "beach": "Littoral & Tourisme à Ouidah",
+      "port": "Port Autonome de Cotonou",
+      "palace": "Palais Royaux d'Abomey",
+      "culture": "Culture & Masques Vodoun",
+      "eco": "Écotourisme & Paysages",
+      "opp": "Opportunités d'Investissement"
+    }
+  },
+  "contact": {
+    "subtitle": "PRENONS CONTACT",
+    "title": "Démarrez Votre Projet",
+    "desc_lead": "Notre équipe est à votre disposition pour répondre à vos questions et planifier votre visite au Bénin",
+    "info_title": "Coordonnées",
+    "director_lbl": "Directeur",
+    "director_val": "Jean-Marie Vianney ASSANI",
+    "office_lbl": "Bureau",
+    "office_val": "Cotonou, Bénin, Afrique de l'Ouest",
+    "email_lbl": "Email",
+    "sectors_title": "Secteurs d'Activité",
+    "sectors_list": [
+      "Conseil en investissement",
+      "Production audiovisuelle (Melting Prod)",
+      "Développement commercial international",
+      "Management sportif"
+    ],
+    "form": {
+      "name_lbl": "Nom Complet *",
+      "company_lbl": "Entreprise / Organisation",
+      "email_lbl": "Email *",
+      "phone_lbl": "Téléphone",
+      "interest_lbl": "Domaine d'Intérêt",
+      "interest_placeholder": "Sélectionnez un secteur",
+      "message_lbl": "Message *",
+      "message_placeholder": "Parlez-nous de votre projet ou de vos questions...",
+      "submit_btn": "Envoyer la Demande"
+    }
+  },
+  "footer": {
+    "desc": "Votre partenaire stratégique pour investir au Bénin",
+    "rights": "© 2026 Melting Consulting / Melting Prod - Jean-Marie Vianney ASSANI. Tous droits réservés."
   }
 }

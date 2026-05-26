@@ -320,6 +320,137 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // ========================================
+  // GALLERY LIGHTBOX
+  // ========================================
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const lightbox = document.getElementById('gallery-lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxClose = document.querySelector('.lightbox-close');
+  const lightboxPrev = document.querySelector('.lightbox-prev');
+  const lightboxNext = document.querySelector('.lightbox-next');
+  
+  let currentGalleryIndex = 0;
+  const galleryImages = [];
+
+  // Populate gallery data
+  galleryItems.forEach((item, index) => {
+    const img = item.querySelector('.gallery-img');
+    const nameEl = item.querySelector('.gallery-item-name');
+    galleryImages.push({
+      src: img.src,
+      captionKey: nameEl.getAttribute('data-i18n')
+    });
+
+    item.addEventListener('click', () => {
+      openLightbox(index);
+    });
+  });
+
+  function openLightbox(index) {
+    currentGalleryIndex = index;
+    updateLightbox();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function nextLightbox() {
+    currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
+    updateLightbox();
+  }
+
+  function prevLightbox() {
+    currentGalleryIndex = (currentGalleryIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateLightbox();
+  }
+
+  function updateLightbox() {
+    const item = galleryImages[currentGalleryIndex];
+    lightboxImg.src = item.src;
+    
+    // Resolve caption text from current translation
+    if (typeof TranslationManager !== 'undefined' && item.captionKey) {
+      lightboxCaption.textContent = TranslationManager.getNestedValue(item.captionKey) || '';
+    } else {
+      const itemEl = galleryItems[currentGalleryIndex].querySelector('.gallery-item-name');
+      lightboxCaption.textContent = itemEl ? itemEl.textContent : '';
+    }
+  }
+
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  if (lightboxNext) lightboxNext.addEventListener('click', nextLightbox);
+  if (lightboxPrev) lightboxPrev.addEventListener('click', prevLightbox);
+
+  // Close lightbox on clicking outside content
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+  }
+
+  // Keyboard navigation for lightbox
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox || !lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') nextLightbox();
+    if (e.key === 'ArrowLeft') prevLightbox();
+  });
+
+  // ========================================
+  // CONTACT FORM HANDLING
+  // ========================================
+  const contactForm = document.getElementById('melting-contact-form');
+  
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Basic validation
+      const nameInput = document.getElementById('form-name');
+      const emailInput = document.getElementById('form-email');
+      const messageInput = document.getElementById('form-message');
+      
+      if (!nameInput.value.trim() || !emailInput.value.trim() || !messageInput.value.trim()) {
+        alert(
+          TranslationManager.currentLang === 'fr' 
+            ? 'Veuillez remplir tous les champs obligatoires (*)' 
+            : 'Please fill out all required fields (*)'
+        );
+        return;
+      }
+      
+      // Simulate form submission
+      const submitBtn = contactForm.querySelector('.form-submit-btn');
+      const originalText = submitBtn.querySelector('span').textContent;
+      
+      submitBtn.disabled = true;
+      submitBtn.querySelector('span').textContent = 
+        TranslationManager.currentLang === 'fr' ? 'Envoi en cours...' : 'Sending...';
+        
+      setTimeout(() => {
+        // Success feedback
+        alert(
+          TranslationManager.currentLang === 'fr'
+            ? 'Votre message a été envoyé avec succès ! Nous vous recontacterons sous 24h.'
+            : 'Your message has been sent successfully! We will contact you within 24 hours.'
+        );
+        
+        // Reset form
+        contactForm.reset();
+        submitBtn.disabled = false;
+        submitBtn.querySelector('span').textContent = originalText;
+      }, 1500);
+    });
+  }
+
+  // ========================================
   // TRANSLATION SYSTEM INIT
   // ========================================
   if (typeof TranslationManager !== 'undefined') {
@@ -338,6 +469,24 @@ document.addEventListener('DOMContentLoaded', function () {
             if (descEl) descEl.textContent = advItems[idx].desc;
           }
         });
+      }
+
+      // Update contact list sectors
+      if (translations && translations.contact && translations.contact.sectors_list) {
+        const sectorsList = translations.contact.sectors_list;
+        const listItems = document.querySelectorAll('.contact-sectors-list li span');
+        listItems.forEach((li, idx) => {
+          if (sectorsList[idx]) li.textContent = sectorsList[idx];
+        });
+      }
+      
+      // Update select default option text
+      if (translations && translations.contact && translations.contact.form) {
+        const placeholderText = translations.contact.form.interest_placeholder;
+        const selectEl = document.getElementById('form-interest');
+        if (selectEl && selectEl.options[0]) {
+          selectEl.options[0].textContent = placeholderText;
+        }
       }
     });
 
