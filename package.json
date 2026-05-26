@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss css/style.css -o css/output.css --watch",
-    "build": "postcss css/style.css -o css/output.css --minify"
+    "dev": "npx postcss css/style.css -o css/output.css --watch",
+    "build": "npx postcss css/style.css -o css/output.css --minify"
   },
   "keywords": [],
   "author": "",
