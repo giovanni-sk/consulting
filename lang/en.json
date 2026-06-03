@@ -110,7 +110,7 @@
         "details_content": "<p style='margin-bottom: 1.5rem;'>Benin aims to become the regional headquarters for Tech companies, innovative startups, and cutting-edge academic institutions through the pharaonic <strong>Seme City</strong> project.</p><h4 style='font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-brand-green);'>The Digital Ecosystem</h4><ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;'><li><strong>Seme City:</strong> A 300-hectare smart and sustainable city dedicated to training, research, and incubating technology companies.</li><li><strong>Connectivity:</strong> The country is connected to multiple international submarine cables, offering some of the fastest and most stable internet speeds in the sub-region.</li><li><strong>Financial Services (Fintech):</strong> A regulatory environment favorable to the emergence of mobile payment solutions, micro-insurance, and financial inclusion.</li></ul><p>Melting Consulting helps technology companies establish themselves, recruit top local talent, and forge strategic partnerships with institutions.</p>"
       },
       "media": {
-        "title": "Audiovisual Production",
+        "title": "Audiovisual Production and Cinematography",
         "badge": "Emerging",
         "desc": "An emerging sector with significant potential in producing audiovisual content for African and international markets.",
         "details_lead": "Explore the vibrant cultural and media landscape of Benin, an essential market for African storytelling.",
@@ -158,7 +158,7 @@
     "details": {
       "dates": {
         "label": "Dates",
-        "value": "September 2026 (flexible dates according to your schedule)"
+        "value": "September-October 2026 (flexible dates or custom program according to your schedule)"
       },
       "duration": {
         "label": "Duration",

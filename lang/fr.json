@@ -110,7 +110,7 @@
         "details_content": "<p style='margin-bottom: 1.5rem;'>Le Bénin ambitionne de devenir le quartier général régional des entreprises de la Tech, des startups innovantes et des institutions académiques de pointe grâce au projet pharaonique <strong>Sème City</strong>.</p><h4 style='font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-brand-green);'>L'Écosystème Numérique</h4><ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;'><li><strong>Sème City :</strong> Une ville intelligente et durable de 300 hectares dédiée à la formation, à la recherche et à l'incubation d'entreprises technologiques.</li><li><strong>Connectivité :</strong> Le pays est connecté à de multiples câbles sous-marins internationaux, offrant l'un des débits internet les plus rapides et stables de la sous-région.</li><li><strong>Services Financiers (Fintech) :</strong> Un environnement réglementaire favorable à l'émergence de solutions de paiement mobile, de micro-assurance et d'inclusion financière.</li></ul><p>Melting Consulting aide les entreprises technologiques à s'implanter, à recruter des talents locaux de haut niveau et à nouer des partenariats stratégiques avec les institutions.</p>"
       },
       "media": {
-        "title": "Production Audiovisuelle",
+        "title": "Production Audiovisuelle et cinematographique",
         "badge": "Émergence",
         "desc": "Secteur émergent avec un potentiel important dans la production de contenus audiovisuels pour les marchés africain et international.",
         "details_lead": "Racontez l'Afrique de demain à travers un secteur de la production audiovisuelle en plein boom.",
@@ -158,7 +158,7 @@
     "details": {
       "dates": {
         "label": "Dates",
-        "value": "Septembre 2026 (dates flexibles selon votre agenda)"
+        "value": "Septembre-Octobre 2026 ( Dates flexibles ou programme sur mesure selon votre agenda)"
       },
       "duration": {
         "label": "Durée",
