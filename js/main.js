@@ -336,10 +336,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Populate gallery data
   galleryItems.forEach((item, index) => {
     const img = item.querySelector('.gallery-img');
-    const nameEl = item.querySelector('.gallery-item-name');
     galleryImages.push({
-      src: img.src,
-      captionKey: nameEl.getAttribute('data-i18n')
+      src: img.src
     });
 
     item.addEventListener('click', () => {
@@ -372,14 +370,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateLightbox() {
     const item = galleryImages[currentGalleryIndex];
     lightboxImg.src = item.src;
-    
-    // Resolve caption text from current translation
-    if (typeof TranslationManager !== 'undefined' && item.captionKey) {
-      lightboxCaption.textContent = TranslationManager.getNestedValue(item.captionKey) || '';
-    } else {
-      const itemEl = galleryItems[currentGalleryIndex].querySelector('.gallery-item-name');
-      lightboxCaption.textContent = itemEl ? itemEl.textContent : '';
-    }
+    lightboxCaption.textContent = '';
   }
 
   if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);

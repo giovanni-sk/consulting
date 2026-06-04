@@ -81,7 +81,7 @@
   --max-width-2xl: 42rem;
   --max-width-container: 1280px;
   --topbar-height: 42px;
-  --navbar-height: 80px;
+  --navbar-height: 95px;
   --total-header-height: calc(var(--topbar-height) + var(--navbar-height));
 }
 @layer base {
@@ -362,12 +362,12 @@
     transform: scale(1.03);
   }
   .navbar-logo img {
-    height: 55px;
+    height: 70px;
     width: auto;
     object-fit: contain;
   }
   .navbar-main.scrolled .navbar-logo img {
-    height: 45px;
+    height: 55px;
   }
   .navbar-menu {
     display: none;
@@ -620,7 +620,7 @@
     border-bottom: 1px solid #f3f4f6;
   }
   .mobile-menu-header img {
-    height: 40px;
+    height: 50px;
     width: auto;
   }
   .mobile-close-btn {
@@ -2500,7 +2500,7 @@
   gap: 24px;
 }
 .footer-logo {
-  height: 48px;
+  height: 60px;
   align-self: flex-start;
   filter: brightness(1.2);
 }
