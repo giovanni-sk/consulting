@@ -14,14 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function openMobileMenu() {
     mobileMenuBtn.classList.add('active');
+    mobileMenuBtn.setAttribute('aria-expanded', 'true');
     mobileMenu.classList.add('open');
+    mobileMenu.setAttribute('aria-hidden', 'false');
     mobileOverlay.classList.add('visible');
     document.body.style.overflow = 'hidden';
   }
 
   function closeMobileMenu() {
     mobileMenuBtn.classList.remove('active');
+    mobileMenuBtn.setAttribute('aria-expanded', 'false');
     mobileMenu.classList.remove('open');
+    mobileMenu.setAttribute('aria-hidden', 'true');
     mobileOverlay.classList.remove('visible');
     document.body.style.overflow = '';
   }
@@ -42,6 +46,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   navLinks.forEach(link => {
     link.addEventListener('click', closeMobileMenu);
+  });
+
+  const mobileCloseBtn = document.getElementById('mobile-close-btn');
+  if (mobileCloseBtn) {
+    mobileCloseBtn.addEventListener('click', closeMobileMenu);
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) {
+      closeMobileMenu();
+    }
   });
 
   // ========================================
@@ -74,15 +89,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let timeout;
 
+    const setOpen = (open) => {
+      dropdown.classList.toggle('visible', open);
+      trigger.setAttribute('aria-expanded', String(open));
+    };
+
     parent.addEventListener('mouseenter', () => {
       clearTimeout(timeout);
-      dropdown.classList.add('visible');
+      setOpen(true);
     });
 
     parent.addEventListener('mouseleave', () => {
-      timeout = setTimeout(() => {
-        dropdown.classList.remove('visible');
-      }, 200);
+      timeout = setTimeout(() => setOpen(false), 200);
+    });
+
+    // Click / tap toggle (touch screens & keyboard)
+    trigger.addEventListener('click', () => {
+      setOpen(!dropdown.classList.contains('visible'));
+    });
+
+    dropdown.querySelectorAll('a').forEach(item => {
+      item.addEventListener('click', () => {
+        setOpen(false);
+        trigger.blur();
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!parent.contains(e.target)) setOpen(false);
+    });
+
+    parent.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        setOpen(false);
+        trigger.focus();
+      }
     });
   });
 
@@ -395,53 +436,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // ========================================
-  // CONTACT FORM HANDLING
-  // ========================================
-  const contactForm = document.getElementById('melting-contact-form');
-  
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Basic validation
-      const nameInput = document.getElementById('form-name');
-      const emailInput = document.getElementById('form-email');
-      const messageInput = document.getElementById('form-message');
-      
-      if (!nameInput.value.trim() || !emailInput.value.trim() || !messageInput.value.trim()) {
-        alert(
-          TranslationManager.currentLang === 'fr' 
-            ? 'Veuillez remplir tous les champs obligatoires (*)' 
-            : 'Please fill out all required fields (*)'
-        );
-        return;
-      }
-      
-      // Simulate form submission
-      const submitBtn = contactForm.querySelector('.form-submit-btn');
-      const originalText = submitBtn.querySelector('span').textContent;
-      
-      submitBtn.disabled = true;
-      submitBtn.querySelector('span').textContent = 
-        TranslationManager.currentLang === 'fr' ? 'Envoi en cours...' : 'Sending...';
-        
-      setTimeout(() => {
-        // Success feedback
-        alert(
-          TranslationManager.currentLang === 'fr'
-            ? 'Votre message a été envoyé avec succès ! Nous vous recontacterons sous 24h.'
-            : 'Your message has been sent successfully! We will contact you within 24 hours.'
-        );
-        
-        // Reset form
-        contactForm.reset();
-        submitBtn.disabled = false;
-        submitBtn.querySelector('span').textContent = originalText;
-      }, 1500);
-    });
-  }
-
-  // ========================================
   // TRANSLATION SYSTEM INIT
   // ========================================
   if (typeof TranslationManager !== 'undefined') {
@@ -489,7 +483,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // SCROLLSPY (ACTIVE NAV LINKS)
   // ========================================
   const sections = document.querySelectorAll('section[id]');
-  const desktopNavLinks = document.querySelectorAll('.navbar-menu .nav-link');
+  const desktopNavLinks = document.querySelectorAll('.navbar-menu a[href^="#"]');
   const mobileNavLinks = document.querySelectorAll('.mobile-menu-body .mobile-nav-link');
 
   function updateActiveNav() {
@@ -509,6 +503,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (scrollY < 100) {
         currentSection = 'accueil';
     }
+
+    dropdownTriggers.forEach(trigger => trigger.classList.remove('active'));
 
     desktopNavLinks.forEach(link => {
       link.classList.remove('active');

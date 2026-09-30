@@ -2,13 +2,15 @@
   "nav": {
     "topbar": {
       "address": "Connecting Opportunities, Creating Impact",
-      "email": "vianney.assani@gmail.com",
-      "phone": "+229 01 58 09 09 68/+33 7 45 72 7929"
+      "email": "contact@meltingconsulting.com",
+      "phone": "+229 01 58 09 09 68",
+      "phone_fr": "+33 7 45 72 79 29"
     },
     "links": {
       "home": "Home",
       "about": "About Us",
       "opportunities": "Opportunities",
+      "sectors": "Key Sectors",
       "why_invest": "Why Invest",
       "immersion": "Immersion Stay",
       "gallery": "Gallery",
@@ -158,19 +160,19 @@
     "details": {
       "dates": {
         "label": "Dates",
-        "value": "September-October 2026 (flexible dates or custom program according to your schedule)"
+        "value": "Business Tour Benin Acacia: Monday 07 to Sunday 13 December 2026\nBusiness Tour Benin Collines: Monday 08 to Sunday 14 March 2027"
       },
       "duration": {
         "label": "Duration",
-        "value": "5 to 7 days of intensive immersion"
-      },
-      "group": {
-        "label": "Group Size",
-        "value": "Limited to 10 participants for a premium and personalized experience"
+        "value": "7 days"
       },
       "support": {
         "label": "Support",
-        "value": "Full guidance by our local experts and professional interpreters"
+        "value": "1) Full guidance by our local experts and professional interpreters\n2) Couple package available, with an optional partial custom agenda for the accompanying spouse or partner"
+      },
+      "quality": {
+        "label": "Quality & Transparency Commitment",
+        "value": "Guaranteed quality approach and bank transactions via Ecobank Benin, official bank of the Melting Prod / Melting Consulting Group"
       }
     },
     "pillars": {
@@ -181,7 +183,12 @@
           "Glo-Djigbe Industrial Zone (GDIZ)",
           "Autonomous Port of Cotonou",
           "Seme City - Technology Park",
-          "Major agro-industrial projects"
+          "Major agro-industrial projects",
+          "Energy & Solar Hub (e.g. Illoulofin Solar Power Plant or photovoltaic projects)",
+          "The Fishing Route & Major Tourist Hubs",
+          "Abomey-Calavi International Market (MIA)",
+          "Digital Innovation Incubators and Hubs (e.g. EPITECH Benin or other leading tech spaces in Cotonou)",
+          "Pharmaceutical Industry & Biotechnology Hub (local manufacturing and health product distribution opportunities)"
         ]
       },
       "meetings": {
@@ -198,10 +205,15 @@
         "title": "Cultural Discovery",
         "desc": "Dive into the rich heritage of Benin",
         "items": [
-          "Slave Route in Ouidah",
-          "Royal Palaces of Abomey (UNESCO)",
-          "Artisan villages and local markets",
-          "Authentic Beninese gastronomy"
+          "The Cotonou Marina and its new seaside developments",
+          "The Historic Quarter and the International Museum of Memory and Slavery (MIME) in Ouidah",
+          "The Ouidah Golf Course and its leisure facilities",
+          "Kota Falls or Pendjari Park (for an ecotourism extension)",
+          "Ganvié, the lake village (the \"Venice of Africa\")",
+          "The Royal Palaces of Abomey (UNESCO World Heritage)",
+          "Dassa-Zoumé and its crystalline hills",
+          "Cashew and yam farms of the region",
+          "And more…"
         ]
       }
     },
@@ -220,6 +232,11 @@
       "culture": "Culture & Vodun Masks",
       "eco": "Ecotourism & Landscapes",
       "opp": "Investment Opportunities"
+    },
+    "golf": {
+      "subtitle": "BENIN GOLF TOURS",
+      "title": "18-Hole Course",
+      "alt": "Ouidah Golf – 18-hole course"
     }
   },
   "contact": {
@@ -227,13 +244,18 @@
     "title": "Start Your Project",
     "desc_lead": "Our team is at your disposal to answer your questions and plan your visit to Benin",
     "info_title": "Contact Details",
-    "director_lbl": "Director",
-    "director_val": "Jean-Marie Vianney ASSANI",
+    "director_lbl": "Managing Director",
+    "director_val": "Vianney ASSANI",
+    "director_role": "Consultant in Communication, Public Relations and Business Intermediation",
     "office_lbl": "Office",
     "office_val": "Cotonou, Benin",
+    "phone_lbl": "Phone",
+    "phone_val": "+229 01 58 09 09 68",
     "email_lbl": "Email",
+    "email_val": "vianney.assani@meltingconsulting.com",
     "sectors_title": "Sectors of Activity",
     "sectors_list": [
+      "Communication consulting, Public relations and business intermediation",
       "Investment consulting",
       "Audiovisual production (Melting Prod)",
       "International business development",
@@ -248,11 +270,26 @@
       "interest_placeholder": "Select a sector",
       "message_lbl": "Message *",
       "message_placeholder": "Tell us about your project or your questions...",
-      "submit_btn": "Send Request"
+      "submit_btn": "Send Request",
+      "status": {
+        "sending": "Sending...",
+        "sent": "Thank you! Your message has been sent. We will get back to you shortly.",
+        "required": "Please fill out all required fields (*).",
+        "invalid_email": "Please enter a valid email address.",
+        "too_fast": "Your message was just sent. Please wait a few seconds.",
+        "error": "Something went wrong and your message could not be sent. Please email us directly at contact@meltingconsulting.com."
+      }
     }
   },
   "footer": {
     "desc": "Your strategic partner for investing in Benin",
-    "rights": "© 2026 Melting Consulting / Melting Prod - Jean-Marie Vianney ASSANI. All rights reserved."
+    "rights": "© 2026 Melting Consulting / Melting Prod - Jean-Marie Vianney ASSANI. All rights reserved.",
+    "address": "01 BP 5913 Cotonou 01\nBenin",
+    "phone": "+229 01 58 09 09 68",
+    "email": "contact@meltingconsulting.com",
+    "cta_title": "Ready to invest in Benin?",
+    "cta_desc": "Let's talk about your project: our experts reply within 24 hours.",
+    "nav_title": "Navigation",
+    "back_to_top": "Back to top"
   }
 }

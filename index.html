@@ -33,18 +33,21 @@
                 <div class="topbar-right">
                     <div class="topbar-contact">
                         <!-- Email -->
-                        <a href="mailto:vianney.assani@gmail.com" class="topbar-contact-item">
+                        <a href="mailto:contact@meltingconsulting.com" class="topbar-contact-item" aria-label="Email">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                             </svg>
                             <span data-i18n="nav.topbar.email">contact@meltingconsulting.com</span>
                         </a>
-                        <!-- Téléphone -->
-                        <a href="tel:+33123456789" class="topbar-contact-item">
+                        <!-- Téléphones -->
+                        <a href="tel:+2290158090968" class="topbar-contact-item" aria-label="Téléphone Bénin">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.824-1.806-5.122-4.104-6.928-6.928l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                             </svg>
-                            <span data-i18n="nav.topbar.phone">+229 01 58 09 09 68/+33 7 45 72 79 29</span>
+                            <span data-i18n="nav.topbar.phone">+229 01 58 09 09 68</span>
+                        </a>
+                        <a href="tel:+33745727929" class="topbar-contact-item topbar-contact-secondary" aria-label="Téléphone France">
+                            <span data-i18n="nav.topbar.phone_fr">+33 7 45 72 79 29</span>
                         </a>
                     </div>
                     <!-- Réseaux Sociaux -->
@@ -84,20 +87,17 @@
                         <a href="#apropos" class="nav-link" data-i18n="nav.links.about">À Propos</a>
                     </div>
                     <div class="nav-item nav-item-dropdown">
-                        <a href="#opportunites" class="nav-link nav-dropdown-trigger">
+                        <button type="button" class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="nav-dropdown-opportunities">
                             <span data-i18n="nav.links.opportunities">Opportunités</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
-                        </a>
+                        </button>
                         <!-- Dropdown Menu -->
-                        <div class="nav-dropdown-menu">
+                        <div class="nav-dropdown-menu" id="nav-dropdown-opportunities">
+                            <a href="#opportunites" class="nav-dropdown-item" data-i18n="nav.links.sectors">Secteurs Porteurs</a>
                             <a href="#investir" class="nav-dropdown-item" data-i18n="nav.links.why_invest">Pourquoi Investir</a>
-                            <a href="#immersion" class="nav-dropdown-item" data-i18n="nav.links.immersion">Séjour d'Immersion</a>
                         </div>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#opportunites" class="nav-link" data-i18n="nav.links.opportunities">Opportunités</a>
                     </div>
                     <div class="nav-item">
                         <a href="#immersion" class="nav-link" data-i18n="nav.links.immersion">Séjour d'Immersion</a>
@@ -128,7 +128,7 @@
                     </a>
 
                     <!-- Hamburger Button (Mobile) -->
-                    <button id="mobile-menu-btn" class="hamburger-btn" aria-label="Menu principal">
+                    <button id="mobile-menu-btn" class="hamburger-btn" aria-label="Menu principal" aria-expanded="false" aria-controls="mobile-menu">
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
@@ -143,7 +143,7 @@
     <!-- MOBILE MENU SIDE DRAWER & OVERLAY -->
     <div id="mobile-overlay" class="mobile-overlay"></div>
     
-    <div id="mobile-menu" class="mobile-menu">
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
         <div class="mobile-menu-header">
             <img src="images/logo2.png" alt="Melting Consulting">
             <button id="mobile-close-btn" class="mobile-close-btn" aria-label="Fermer le menu">
@@ -170,7 +170,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
                 </svg>
-                <span data-i18n="nav.links.opportunities">Opportunités</span>
+                <span data-i18n="nav.links.sectors">Secteurs Porteurs</span>
             </a>
             <a href="#investir" class="mobile-nav-link">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
@@ -199,6 +199,17 @@
         </div>
         
         <div class="mobile-menu-footer">
+            <!-- Mobile quick contacts -->
+            <div class="mobile-contact-links">
+                <a href="tel:+2290158090968" class="mobile-contact-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.824-1.806-5.122-4.104-6.928-6.928l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+                    <span>+229 01 58 09 09 68</span>
+                </a>
+                <a href="mailto:contact@meltingconsulting.com" class="mobile-contact-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+                    <span>contact@meltingconsulting.com</span>
+                </a>
+            </div>
             <!-- Mobile Language Switcher -->
             <div class="mobile-lang-switcher">
                 <button class="lang-btn active" data-lang="fr">Français</button>
@@ -222,7 +233,7 @@
             
             <!-- Slide 1 -->
             <div class="hero-slide active">
-                <img src="images/hero/Benin-Cotonou-Place_de_amazone-Pietra_Giallo-40x80x3.jpg" alt="Melting Consulting Strategy" class="hero-slide-bg">
+                <img src="images/hero/Benin-Cotonou-Place_de_amazone-Pietra_Giallo-40x80x3.jpg" alt="Melting Consulting Strategy" class="hero-slide-bg hero-bg-amazone">
                 <div class="hero-slide-overlay"></div>
                 <div class="hero-slide-accent"></div>
                 <div class="hero-slide-content">
@@ -242,7 +253,7 @@
 
             <!-- Slide 2 -->
             <div class="hero-slide">
-                <img src="images/hero/1761322265222-780x470.jpg" alt="Investment Opportunities" class="hero-slide-bg">
+                <img src="images/hero/1761322265222-780x470.jpg" alt="Investment Opportunities" class="hero-slide-bg hero-bg-offices">
                 <div class="hero-slide-overlay"></div>
                 <div class="hero-slide-accent"></div>
                 <div class="hero-slide-content">
@@ -262,7 +273,7 @@
 
             <!-- Slide 3 -->
             <div class="hero-slide">
-                <img src="images/hero/525600414_122147128610688599_5839219487551147354_n.webp" alt="Immersion stay Africa" class="hero-slide-bg">
+                <img src="images/hero/525600414_122147128610688599_5839219487551147354_n.webp" alt="Immersion stay Africa" class="hero-slide-bg hero-bg-golf">
                 <div class="hero-slide-overlay"></div>
                 <div class="hero-slide-accent"></div>
                 <div class="hero-slide-content">
@@ -282,7 +293,7 @@
 
             <!-- Slide 4 -->
             <div class="hero-slide">
-                <img src="images/hero/ville-seme-benin-formation.jpg" alt="Innovation and Development" class="hero-slide-bg">
+                <img src="images/hero/ville-seme-benin-formation.jpg" alt="Innovation and Development" class="hero-slide-bg hero-bg-seme">
                 <div class="hero-slide-overlay"></div>
                 <div class="hero-slide-accent"></div>
                 <div class="hero-slide-content">
@@ -708,7 +719,7 @@
                                 </div>
                                 <div class="detail-content">
                                     <h4 class="detail-label" data-i18n="immersion.details.dates.label">Dates</h4>
-                                    <p class="detail-value" data-i18n="immersion.details.dates.value">Septembre-Octobre 2026 ( Dates flexibles ou programme sur mesure selon votre agenda)</p>
+                                    <p class="detail-value text-pre-wrap" data-i18n="immersion.details.dates.value">Business Tour Bénin Acacia : du lundi 07 au dimanche 13 décembre 2026&#10;Business Tour Bénin Collines : du lundi 08 au dimanche 14 mars 2027</p>
                                 </div>
                             </div>
 
@@ -722,26 +733,12 @@
                                 </div>
                                 <div class="detail-content">
                                     <h4 class="detail-label" data-i18n="immersion.details.duration.label">Durée</h4>
-                                    <p class="detail-value" data-i18n="immersion.details.duration.value">5 à 7 jours d'immersion intensive</p>
+                                    <p class="detail-value" data-i18n="immersion.details.duration.value">07 jours</p>
                                 </div>
                             </div>
 
-                            <!-- Detail item 3: Groupe -->
-                            <div class="immersion-detail-item">
-                                <div class="detail-icon-box">
-                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                                        <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.8"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                                    </svg>
-                                </div>
-                                <div class="detail-content">
-                                    <h4 class="detail-label" data-i18n="immersion.details.group.label">Groupe</h4>
-                                    <p class="detail-value" data-i18n="immersion.details.group.value">Limité à 10 participants pour une expérience premium et personnalisée</p>
-                                </div>
-                            </div>
 
-                            <!-- Detail item 4: Accompagnement -->
+                            <!-- Detail item 3: Accompagnement -->
                             <div class="immersion-detail-item">
                                 <div class="detail-icon-box">
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -752,7 +749,20 @@
                                 </div>
                                 <div class="detail-content">
                                     <h4 class="detail-label" data-i18n="immersion.details.support.label">Accompagnement</h4>
-                                    <p class="detail-value" data-i18n="immersion.details.support.value">Encadrement complet par nos experts locaux et interprètes professionnels</p>
+                                    <p class="detail-value text-pre-wrap" data-i18n="immersion.details.support.value">1) Encadrement complet par nos experts locaux et interprètes professionnels&#10;2) Offre couple disponible avec planification optionnelle d’un agenda partiel personnalisé pour le conjoint ou la conjointe accompagnant·e</p>
+                                </div>
+                            </div>
+                            <!-- Detail item 4: Engagement qualité -->
+                            <div class="immersion-detail-item">
+                                <div class="detail-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2L4 5V11C4 16 7.4 20.7 12 22C16.6 20.7 20 16 20 11V5L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                                        <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="detail-content">
+                                    <h4 class="detail-label" data-i18n="immersion.details.quality.label">Engagement qualité et transparence</h4>
+                                    <p class="detail-value" data-i18n="immersion.details.quality.value">Démarche qualité assurée et transactions par voie bancaire via Ecobank Bénin, banque officielle du Groupe Melting Prod / Melting Consulting</p>
                                 </div>
                             </div>
                         </div>
@@ -804,6 +814,26 @@
                                     <li>
                                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                                         <span data-i18n="immersion.pillars.visits.items.3">Projets agro-industriels majeurs</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <span data-i18n="immersion.pillars.visits.items.4">Le Pôle Énergétique &amp; Solaire (ex : Centrale Solaire de Illoulofin ou projets photovoltaïques)</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <span data-i18n="immersion.pillars.visits.items.5">La Route des Pêches &amp; Pôles Touristiques Majeurs</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <span data-i18n="immersion.pillars.visits.items.6">Le Marché International de Abomey-Calavi (MIA)</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <span data-i18n="immersion.pillars.visits.items.7">Les Incubateurs et Hubs d'Innovation Numérique (ex : EPITECH Bénin ou autres espaces technologiques de référence à Cotonou)</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <span data-i18n="immersion.pillars.visits.items.8">Pôle de l'Industrie Pharmaceutique &amp; Biotechnologies (découverte des opportunités de fabrication locale et de distribution de produits de santé)</span>
                                     </li>
                                 </ul>
                             </div>
@@ -880,19 +910,38 @@
                                 <ul class="pillar-checklist">
                                     <li>
                                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        <span data-i18n="immersion.pillars.culture.items.0">Route de l'Esclavage à Ouidah</span>
+                                        <span data-i18n="immersion.pillars.culture.items.0">La Marina de Cotonou et ses nouveaux aménagements balnéaires</span>
                                     </li>
                                     <li>
                                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        <span data-i18n="immersion.pillars.culture.items.1">Palais Royaux d'Abomey (UNESCO)</span>
+                                        <span data-i18n="immersion.pillars.culture.items.1">Le Quartier Historique et le Musée International de la Mémoire et des Esclaves (MIME) à Ouidah</span>
                                     </li>
                                     <li>
                                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        <span data-i18n="immersion.pillars.culture.items.2">Villages artisanaux et marchés locaux</span>
+                                        <span data-i18n="immersion.pillars.culture.items.2">Le Golf de Ouidah et ses infrastructures de loisirs</span>
                                     </li>
                                     <li>
                                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        <span data-i18n="immersion.pillars.culture.items.3">Gastronomie béninoise authentique</span>
+                                        <span data-i18n="immersion.pillars.culture.items.3">Les Chutes de Kota ou la Pendjari (pour une extension écotouristique)</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <span data-i18n="immersion.pillars.culture.items.4">Ganvié et la cité lacustre (la Venise Africaine)</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <span data-i18n="immersion.pillars.culture.items.5">Les Palais Royaux d'Abomey (classés UNESCO)</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <span data-i18n="immersion.pillars.culture.items.6">Dassa-Zoumé et ses collines cristallines</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <span data-i18n="immersion.pillars.culture.items.7">Les exploitations agricoles d'anacarde et d'igname de la région</span>
+                                    </li>
+                                    <li class="pillar-checklist-more">
+                                        <span data-i18n="immersion.pillars.culture.items.8">Etc…</span>
                                     </li>
                                 </ul>
                             </div>
@@ -986,6 +1035,22 @@
                     </div>
 
                 </div>
+
+                <!-- Benin Golf Tours -->
+                <div class="golf-tours">
+                    <div class="golf-tours-header">
+                        <span class="gallery-subtitle" data-i18n="gallery.golf.subtitle">BENIN GOLF TOURS</span>
+                        <h3 class="golf-tours-title" data-i18n="gallery.golf.title">Parcours de 18 trous</h3>
+                    </div>
+                    <div class="golf-tours-grid">
+                        <div class="gallery-item" data-gallery-item="18">
+                            <img src="images/gallery/golf-ouidah-1.jpg" alt="Golf de Ouidah – parcours de 18 trous" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-item" data-gallery-item="19">
+                            <img src="images/gallery/golf-ouidah-2.jpg" alt="Golf de Ouidah – parcours de 18 trous" class="gallery-img" loading="lazy">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1030,8 +1095,9 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <h4 class="info-label" data-i18n="contact.director_lbl">Directeur</h4>
-                                        <p class="info-value" data-i18n="contact.director_val">Jean-Marie Vianney ASSANI</p>
+                                        <h4 class="info-label" data-i18n="contact.director_lbl">Directeur Général</h4>
+                                        <p class="info-value" data-i18n="contact.director_val">Vianney ASSANI</p>
+                                        <p class="info-role" data-i18n="contact.director_role">Consultant en Communication, Relations publiques et Intermédiations d’affaires</p>
                                     </div>
                                 </div>
 
@@ -1049,6 +1115,19 @@
                                     </div>
                                 </div>
 
+                                <!-- Téléphone -->
+                                <div class="info-detail-item">
+                                    <div class="info-icon-box">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="info-label" data-i18n="contact.phone_lbl">Téléphone</h4>
+                                        <p class="info-value"><a href="tel:+2290158090968" class="contact-email-link" data-i18n="contact.phone_val">+229 01 58 09 09 68</a></p>
+                                    </div>
+                                </div>
+
                                 <!-- Email -->
                                 <div class="info-detail-item">
                                     <div class="info-icon-box">
@@ -1059,7 +1138,7 @@
                                     </div>
                                     <div>
                                         <h4 class="info-label" data-i18n="contact.email_lbl">Email</h4>
-                                        <p class="info-value"><a href="mailto:contact@meltingconsulting.bj" class="contact-email-link">vianney.assani@gmail.com</a></p>
+                                        <p class="info-value"><a href="mailto:vianney.assani@meltingconsulting.com" class="contact-email-link" data-i18n="contact.email_val">vianney.assani@meltingconsulting.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -1071,19 +1150,23 @@
                             <ul class="contact-sectors-list">
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
-                                    <span data-i18n="contact.sectors_list.0">Conseil en investissement</span>
+                                    <span data-i18n="contact.sectors_list.0">Conseil en communication, Relations publiques et intermédiations d’affaires</span>
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
-                                    <span data-i18n="contact.sectors_list.1">Production audiovisuelle (Melting Prod)</span>
+                                    <span data-i18n="contact.sectors_list.1">Conseil en investissement</span>
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
-                                    <span data-i18n="contact.sectors_list.2">Développement commercial international</span>
+                                    <span data-i18n="contact.sectors_list.2">Production audiovisuelle (Melting Prod)</span>
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
-                                    <span data-i18n="contact.sectors_list.3">Management sportif</span>
+                                    <span data-i18n="contact.sectors_list.3">Développement commercial international</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+                                    <span data-i18n="contact.sectors_list.4">Management sportif</span>
                                 </li>
                             </ul>
                         </div>
@@ -1092,17 +1175,17 @@
 
                     <!-- Right Column: Interactive Form -->
                     <div class="contact-form-column">
-                        <form id="melting-contact-form" class="contact-form-card" action="#" method="POST">
+                        <form id="melting-contact-form" class="contact-form-card" action="contact.php" method="POST" novalidate>
                             
                             <!-- Row 1: Nom complet & Entreprise -->
                             <div class="form-row-2">
                                 <div class="form-group">
                                     <label for="form-name" class="form-label" data-i18n="contact.form.name_lbl">Nom Complet *</label>
-                                    <input type="text" id="form-name" name="name" class="form-input" required>
+                                    <input type="text" id="form-name" name="name" class="form-input" autocomplete="name" maxlength="120" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="form-company" class="form-label" data-i18n="contact.form.company_lbl">Entreprise / Organisation</label>
-                                    <input type="text" id="form-company" name="company" class="form-input">
+                                    <input type="text" id="form-company" name="company" class="form-input" autocomplete="organization" maxlength="150">
                                 </div>
                             </div>
 
@@ -1110,11 +1193,11 @@
                             <div class="form-row-2">
                                 <div class="form-group">
                                     <label for="form-email" class="form-label" data-i18n="contact.form.email_lbl">Email *</label>
-                                    <input type="email" id="form-email" name="email" class="form-input" required>
+                                    <input type="email" id="form-email" name="email" class="form-input" autocomplete="email" maxlength="180" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="form-phone" class="form-label" data-i18n="contact.form.phone_lbl">Téléphone</label>
-                                    <input type="tel" id="form-phone" name="phone" class="form-input">
+                                    <input type="tel" id="form-phone" name="phone" class="form-input" autocomplete="tel" maxlength="40">
                                 </div>
                             </div>
 
@@ -1124,10 +1207,11 @@
                                 <div class="select-wrapper">
                                     <select id="form-interest" name="interest" class="form-select">
                                         <option value="" disabled selected data-i18n="contact.form.interest_placeholder">Sélectionnez un secteur</option>
-                                        <option value="investment" data-i18n="contact.sectors_list.0">Conseil en investissement</option>
-                                        <option value="audiovisual" data-i18n="contact.sectors_list.1">Production audiovisuelle (Melting Prod)</option>
-                                        <option value="business" data-i18n="contact.sectors_list.2">Développement commercial international</option>
-                                        <option value="sports" data-i18n="contact.sectors_list.3">Management sportif</option>
+                                        <option value="communication" data-i18n="contact.sectors_list.0">Conseil en communication, Relations publiques et intermédiations d’affaires</option>
+                                        <option value="investment" data-i18n="contact.sectors_list.1">Conseil en investissement</option>
+                                        <option value="audiovisual" data-i18n="contact.sectors_list.2">Production audiovisuelle (Melting Prod)</option>
+                                        <option value="business" data-i18n="contact.sectors_list.3">Développement commercial international</option>
+                                        <option value="sports" data-i18n="contact.sectors_list.4">Management sportif</option>
                                     </select>
                                     <svg class="select-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1138,8 +1222,14 @@
                             <!-- Row 4: Message -->
                             <div class="form-group">
                                 <label for="form-message" class="form-label" data-i18n="contact.form.message_lbl">Message *</label>
-                                <textarea id="form-message" name="message" rows="5" class="form-textarea" required data-i18n-placeholder="contact.form.message_placeholder" placeholder="Parlez-nous de votre projet ou de vos questions..."></textarea>
+                                <textarea id="form-message" name="message" rows="5" class="form-textarea" maxlength="5000" required data-i18n-placeholder="contact.form.message_placeholder" placeholder="Parlez-nous de votre projet ou de vos questions..."></textarea>
                             </div>
+
+                            <!-- Anti-spam : champ invisible, laissé vide par les humains -->
+                            <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                            <!-- Statut de l'envoi (succès / erreur) -->
+                            <div id="form-status" class="form-status" role="status" aria-live="polite" hidden></div>
 
                             <!-- Submit Button -->
                             <div class="form-submit-wrapper">
@@ -1161,13 +1251,38 @@
 
     <!-- FOOTER SECTION -->
     <footer class="footer-main">
-        
+
+        <!-- Bande aux couleurs de la marque -->
+        <div class="footer-accent" aria-hidden="true"></div>
+
+        <!-- Call to action -->
+        <div class="footer-cta">
+            <div class="container-custom footer-cta-inner">
+                <div class="footer-cta-text">
+                    <h3 class="footer-cta-title" data-i18n="footer.cta_title">Prêt à investir au Bénin ?</h3>
+                    <p class="footer-cta-desc" data-i18n="footer.cta_desc">Parlons de votre projet : nos experts vous répondent sous 24h.</p>
+                </div>
+                <div class="footer-cta-actions">
+                    <a href="#contact" class="footer-cta-btn footer-cta-btn-primary">
+                        <span data-i18n="nav.cta">Consultation Gratuite</span>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="tel:+2290158090968" class="footer-cta-btn footer-cta-btn-ghost">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>+229 01 58 09 09 68</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="footer-top">
             <div class="container-custom footer-grid">
-                
+
                 <!-- Col 1: Brand Info -->
                 <div class="footer-col brand-col">
-                    <img src="images/logo2.png" alt="Melting Consulting Logo" class="footer-logo">
+                    <a href="#accueil" class="footer-logo-card" aria-label="Melting Consulting">
+                        <img src="images/logo2.png" alt="Melting Consulting Logo" class="footer-logo">
+                    </a>
                     <p class="footer-brand-desc" data-i18n="footer.desc">Votre partenaire stratégique pour investir au Bénin</p>
                     <div class="footer-social-links">
                         <a href="#" aria-label="Facebook"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg></a>
@@ -1179,11 +1294,10 @@
 
                 <!-- Col 2: Navigation Links -->
                 <div class="footer-col links-col">
-                    <h4 class="footer-col-title">Navigation</h4>
+                    <h4 class="footer-col-title" data-i18n="footer.nav_title">Navigation</h4>
                     <ul class="footer-links">
                         <li><a href="#accueil" data-i18n="nav.links.home">Accueil</a></li>
                         <li><a href="#apropos" data-i18n="nav.links.about">À Propos</a></li>
-                        <li><a href="#opportunites" data-i18n="nav.links.opportunities">Opportunités</a></li>
                         <li><a href="#investir" data-i18n="nav.links.why_invest">Pourquoi Investir</a></li>
                         <li><a href="#immersion" data-i18n="nav.links.immersion">Séjour d'Immersion</a></li>
                         <li><a href="#galerie" data-i18n="nav.links.gallery">Galerie</a></li>
@@ -1191,17 +1305,34 @@
                     </ul>
                 </div>
 
-                <!-- Col 3: Quick Info Contacts -->
+                <!-- Col 3: Sectors -->
+                <div class="footer-col sectors-col">
+                    <h4 class="footer-col-title" data-i18n="nav.links.opportunities">Opportunités</h4>
+                    <ul class="footer-links">
+                        <li><a href="secteur.html?id=gdiz" data-i18n="sectors.items.gdiz.title">Industrie &amp; GDIZ</a></li>
+                        <li><a href="secteur.html?id=agro" data-i18n="sectors.items.agro.title">Agro-Industrie</a></li>
+                        <li><a href="secteur.html?id=tourism" data-i18n="sectors.items.tourism.title">Tourisme Mémoriel</a></li>
+                        <li><a href="secteur.html?id=logistics" data-i18n="sectors.items.logistics.title">Logistique &amp; Transport</a></li>
+                        <li><a href="secteur.html?id=tech" data-i18n="sectors.items.tech.title">Technologies &amp; Innovation</a></li>
+                        <li><a href="secteur.html?id=media" data-i18n="sectors.items.media.title">Production Audiovisuelle et cinematographique</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Quick Info Contacts -->
                 <div class="footer-col contacts-col">
                     <h4 class="footer-col-title" data-i18n="contact.info_title">Coordonnées</h4>
                     <ul class="footer-contacts">
                         <li class="contact-item">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            <span class="text-pre-wrap" data-i18n="contact.office_val">Cotonou, Bénin&#10;Afrique de l'Ouest</span>
+                            <span class="text-pre-wrap" data-i18n="footer.address">01 BP 5913 Cotonou 01&#10;Bénin</span>
+                        </li>
+                        <li class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <a href="tel:+2290158090968" data-i18n="footer.phone">+229 01 58 09 09 68</a>
                         </li>
                         <li class="contact-item">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-                            <a href="mailto:contact@meltingconsulting.bj">vianney.assani@gmail.com</a>
+                            <a href="mailto:contact@meltingconsulting.com" data-i18n="footer.email">contact@meltingconsulting.com</a>
                         </li>
                     </ul>
                 </div>
@@ -1212,6 +1343,10 @@
         <div class="footer-bottom">
             <div class="container-custom footer-bottom-inner">
                 <p class="copyright-text" data-i18n="footer.rights">© 2026 Melting Consulting / Melting Prod - Jean-Marie Vianney ASSANI. Tous droits réservés.</p>
+                <a href="#accueil" class="footer-back-top">
+                    <span data-i18n="footer.back_to_top">Retour en haut</span>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
             </div>
         </div>
 
@@ -1220,5 +1355,6 @@
     <!-- TRANSLATIONS AND SCRIPTS -->
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
