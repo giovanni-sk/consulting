@@ -40,6 +40,10 @@ mirror --reverse --delete --only-newer --verbose $DRY_RUN \
     --exclude-glob .ftpquota \
     --exclude-glob .well-known/ \
     --exclude-glob cgi-bin/ \
+    --exclude-glob .htaccess \
+    --exclude-glob .user.ini \
+    --exclude-glob php.ini \
+    --exclude-glob error_log \
     --exclude-glob .vscode/ \
     --exclude-glob node_modules/ \
     --exclude-glob .gitignore \
