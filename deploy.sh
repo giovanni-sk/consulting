@@ -30,7 +30,9 @@ echo "Compilation du CSS..."
 npm run build
 
 echo "Envoi vers $FTP_HOST:$FTP_DIR ..."
-lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<LFTP
+export LFTP_PASSWORD="$FTP_PASS"
+# Le mot de passe passe par LFTP_PASSWORD et est masqué dans la sortie (le dry-run affiche les URL complètes).
+lftp --env-password -u "$FTP_USER" "$FTP_HOST" <<LFTP 2>&1 | sed -E 's#(ftp://[^:/@]+):[^@]+@#\1:****@#g'
 set ftp:ssl-allow yes
 set ssl:verify-certificate no
 mirror --reverse --delete --only-newer --verbose $DRY_RUN \
