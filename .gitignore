@@ -1,0 +1,13 @@
+# Dépendances
+node_modules/
+
+# Éditeur
+.vscode/
+
+# Identifiants de déploiement (ne jamais commiter)
+.deploy.env
+
+# Système
+.DS_Store
+Thumbs.db
+*.log
