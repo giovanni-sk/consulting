@@ -37,6 +37,9 @@ set ftp:ssl-allow yes
 set ssl:verify-certificate no
 mirror --reverse --delete --only-newer --verbose $DRY_RUN \
     --exclude-glob .git/ \
+    --exclude-glob .ftpquota \
+    --exclude-glob .well-known/ \
+    --exclude-glob cgi-bin/ \
     --exclude-glob .vscode/ \
     --exclude-glob node_modules/ \
     --exclude-glob .gitignore \
