@@ -14,6 +14,7 @@
       "why_invest": "Pourquoi Investir",
       "immersion": "Séjour d'Immersion",
       "gallery": "Galerie",
+      "news": "Actualités",
       "contact": "Contact"
     },
     "cta": "Consultation Gratuite"
@@ -238,6 +239,32 @@
       "title": "Parcours de 18 trous",
       "alt": "Golf de Ouidah – parcours de 18 trous"
     }
+  },
+  "news": {
+    "subtitle": "NEWS",
+    "title": "Actualités du Bénin",
+    "desc_lead": "L'essentiel de l'actualité économique, industrielle et des affaires au Bénin",
+    "source": "Bénin TV",
+    "watch": "Regarder la vidéo",
+    "youtube": "Voir sur YouTube",
+    "tags": {
+      "economy": "Économie",
+      "diplomacy": "Diplomatie",
+      "industry": "Industrie",
+      "culture": "Culture",
+      "tourism": "Tourisme",
+      "cooperation": "Coopération"
+    },
+    "items": {
+      "new_york": "New York : le Bénin expose sa trajectoire économique",
+      "china": "77 ans de la Chine populaire : célébration à Cotonou",
+      "tiles": "Mois du consommons local : focus sur les carreaux made in Bénin",
+      "da_costa": "Romain Da Costa : le Bénin, « une puissance culturelle sans limites »",
+      "kingston": "Le Bénin à l'honneur à Paris : Joe Kingston sur scène",
+      "destination": "Promotion de la destination Bénin : ça se joue sur les réseaux sociaux",
+      "luxembourg": "Coopération Bénin-Luxembourg : dix milliards pour booster les métiers portuaires"
+    },
+    "featured_desc": "En marge de son passage à New York, le Bénin a présenté à ses partenaires internationaux sa trajectoire économique et ses opportunités d'investissement."
   },
   "contact": {
     "subtitle": "PRENONS CONTACT",

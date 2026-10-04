@@ -558,4 +558,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+
+  // ========================================
+  // NEWS VIDEOS - load YouTube player on click
+  // ========================================
+  document.querySelectorAll('.news-video[data-video-id]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.videoId}?autoplay=1&rel=0`;
+      iframe.title = btn.getAttribute('aria-label');
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      const player = document.createElement('div');
+      player.className = 'news-video';
+      player.appendChild(iframe);
+      btn.replaceWith(player);
+    });
+  });
+
 });

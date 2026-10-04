@@ -14,6 +14,7 @@
       "why_invest": "Why Invest",
       "immersion": "Immersion Stay",
       "gallery": "Gallery",
+      "news": "News",
       "contact": "Contact"
     },
     "cta": "Free Consultation"
@@ -238,6 +239,32 @@
       "title": "18-Hole Course",
       "alt": "Ouidah Golf – 18-hole course"
     }
+  },
+  "news": {
+    "subtitle": "NEWS",
+    "title": "Benin News",
+    "desc_lead": "The essentials of economic, industrial and business news in Benin",
+    "source": "Bénin TV",
+    "watch": "Watch the video",
+    "youtube": "Watch on YouTube",
+    "tags": {
+      "economy": "Economy",
+      "diplomacy": "Diplomacy",
+      "industry": "Industry",
+      "culture": "Culture",
+      "tourism": "Tourism",
+      "cooperation": "Cooperation"
+    },
+    "items": {
+      "new_york": "New York: Benin presents its economic trajectory",
+      "china": "77 years of the People's Republic of China: celebration in Cotonou",
+      "tiles": "\"Buy Local\" month: spotlight on tiles made in Benin",
+      "da_costa": "Romain Da Costa: Benin, \"a cultural power without limits\"",
+      "kingston": "Benin in the spotlight in Paris: Joe Kingston on stage",
+      "destination": "Promoting destination Benin: it all happens on social media",
+      "luxembourg": "Benin-Luxembourg cooperation: ten billion to boost port trades"
+    },
+    "featured_desc": "During its visit to New York, Benin presented its economic trajectory and investment opportunities to its international partners."
   },
   "contact": {
     "subtitle": "GET IN TOUCH",
