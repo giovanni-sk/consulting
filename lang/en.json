@@ -295,6 +295,18 @@
       "phone_lbl": "Phone Number",
       "interest_lbl": "Area of Interest",
       "interest_placeholder": "Select a sector",
+      "interest_options": [
+        "Agribusiness & Agricultural processing",
+        "Pharmaceutical industry & Healthcare",
+        "Technology, Digital Economy & Smart Cities",
+        "Energy & Ecological transition",
+        "Mining & Extractive industries",
+        "Logistics, Transport & Port infrastructure",
+        "Construction, Commercial & Residential real estate & Urban development",
+        "Education, Higher education & Vocational training",
+        "Tourism, Hospitality & Leisure (Golf & Resorts)",
+        "Other sector / Commercial partnership & Business referral"
+      ],
       "message_lbl": "Message *",
       "message_placeholder": "Tell us about your project or your questions...",
       "submit_btn": "Send Request",

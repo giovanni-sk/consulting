@@ -17,11 +17,16 @@ const MAIL_SUBJECT = 'Nouvelle demande de contact – site Melting Consulting';
 const MIN_DELAY_BETWEEN_SENDS = 30; // secondes, anti-envoi en rafale
 
 const INTERESTS = [
-    'communication' => 'Conseil en communication, Relations publiques et intermédiations d’affaires',
-    'investment'    => 'Conseil en investissement',
-    'audiovisual'   => 'Production audiovisuelle (Melting Prod)',
-    'business'      => 'Développement commercial international',
-    'sports'        => 'Management sportif',
+    'agro'         => 'Agro-industrie & Transformation agricole',
+    'pharma'       => 'Industrie pharmaceutique & Santé',
+    'tech'         => 'Technologies, Économie Numérique & Smart Cities',
+    'energy'       => 'Énergie & Transition écologique',
+    'mining'       => 'Industries minières & Extractives',
+    'logistics'    => 'Logistique, Transports & Infrastructures Portuaires',
+    'construction' => "BTP, immobilier d'affaires, Résidentiel & Aménagement Urbain",
+    'education'    => 'Éducation, Enseignement supérieur & Formation professionnelle',
+    'tourism'      => 'Industrie touristique, Hôtellerie & Loisirs (Golfs & Résidences)',
+    'other'        => "Autre secteur / Partenariat commercial & Apport d'affaires",
 ];
 
 // ========================================

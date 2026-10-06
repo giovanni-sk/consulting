@@ -295,6 +295,18 @@
       "phone_lbl": "Téléphone",
       "interest_lbl": "Domaine d'Intérêt",
       "interest_placeholder": "Sélectionnez un secteur",
+      "interest_options": [
+        "Agro-industrie & Transformation agricole",
+        "Industrie pharmaceutique & Santé",
+        "Technologies, Économie Numérique & Smart Cities",
+        "Énergie & Transition écologique",
+        "Industries minières & Extractives",
+        "Logistique, Transports & Infrastructures Portuaires",
+        "BTP, immobilier d'affaires, Résidentiel & Aménagement Urbain",
+        "Éducation, Enseignement supérieur & Formation professionnelle",
+        "Industrie touristique, Hôtellerie & Loisirs (Golfs & Résidences)",
+        "Autre secteur / Partenariat commercial & Apport d'affaires"
+      ],
       "message_lbl": "Message *",
       "message_placeholder": "Parlez-nous de votre projet ou de vos questions...",
       "submit_btn": "Envoyer la Demande",
