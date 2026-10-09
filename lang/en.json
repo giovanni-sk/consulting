@@ -245,9 +245,11 @@
     "title": "Benin News",
     "desc_lead": "The essentials of economic, industrial and business news in Benin",
     "source": "Bénin TV",
+    "source_srtb": "SRTB",
     "watch": "Watch the video",
     "youtube": "Watch on YouTube",
     "tags": {
+      "development": "Development",
       "economy": "Economy",
       "diplomacy": "Diplomacy",
       "industry": "Industry",
@@ -256,6 +258,8 @@
       "cooperation": "Cooperation"
     },
     "items": {
+      "poles": "Creation of territorial development hubs",
+      "tour_guide": "Tour guide: at the heart of a passion-driven profession",
       "new_york": "New York: Benin presents its economic trajectory",
       "china": "77 years of the People's Republic of China: celebration in Cotonou",
       "tiles": "\"Buy Local\" month: spotlight on tiles made in Benin",
@@ -264,7 +268,7 @@
       "destination": "Promoting destination Benin: it all happens on social media",
       "luxembourg": "Benin-Luxembourg cooperation: ten billion to boost port trades"
     },
-    "featured_desc": "During its visit to New York, Benin presented its economic trajectory and investment opportunities to its international partners."
+    "featured_desc": "The Beninese government presented the creation of territorial development hubs, a new framework to structure regional planning and economic attractiveness."
   },
   "contact": {
     "subtitle": "GET IN TOUCH",
@@ -299,8 +303,10 @@
         "Agribusiness & Agricultural processing",
         "Pharmaceutical industry & Healthcare",
         "Technology, Digital Economy & Smart Cities",
+        "Banking & Financial institutions",
         "Energy & Ecological transition",
         "Mining & Extractive industries",
+        "Oil industry & Hydrocarbon distribution",
         "Logistics, Transport & Port infrastructure",
         "Construction, Commercial & Residential real estate & Urban development",
         "Education, Higher education & Vocational training",

@@ -245,9 +245,11 @@
     "title": "Actualités du Bénin",
     "desc_lead": "L'essentiel de l'actualité économique, industrielle et des affaires au Bénin",
     "source": "Bénin TV",
+    "source_srtb": "SRTB",
     "watch": "Regarder la vidéo",
     "youtube": "Voir sur YouTube",
     "tags": {
+      "development": "Développement",
       "economy": "Économie",
       "diplomacy": "Diplomatie",
       "industry": "Industrie",
@@ -256,6 +258,8 @@
       "cooperation": "Coopération"
     },
     "items": {
+      "poles": "Création des pôles de développement territorial",
+      "tour_guide": "Guide de tourisme : au coeur d'un métier de passion",
       "new_york": "New York : le Bénin expose sa trajectoire économique",
       "china": "77 ans de la Chine populaire : célébration à Cotonou",
       "tiles": "Mois du consommons local : focus sur les carreaux made in Bénin",
@@ -264,7 +268,7 @@
       "destination": "Promotion de la destination Bénin : ça se joue sur les réseaux sociaux",
       "luxembourg": "Coopération Bénin-Luxembourg : dix milliards pour booster les métiers portuaires"
     },
-    "featured_desc": "En marge de son passage à New York, le Bénin a présenté à ses partenaires internationaux sa trajectoire économique et ses opportunités d'investissement."
+    "featured_desc": "Le gouvernement béninois a présenté la création des pôles de développement territorial, un nouveau cadre pour structurer l'aménagement et l'attractivité économique des régions."
   },
   "contact": {
     "subtitle": "PRENONS CONTACT",
@@ -299,8 +303,10 @@
         "Agro-industrie & Transformation agricole",
         "Industrie pharmaceutique & Santé",
         "Technologies, Économie Numérique & Smart Cities",
+        "Banques & Institutions financières",
         "Énergie & Transition écologique",
         "Industries minières & Extractives",
+        "Industrie pétrolière & Distribution d'hydrocarbures",
         "Logistique, Transports & Infrastructures Portuaires",
         "BTP, immobilier d'affaires, Résidentiel & Aménagement Urbain",
         "Éducation, Enseignement supérieur & Formation professionnelle",
